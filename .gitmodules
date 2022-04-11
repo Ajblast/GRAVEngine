@@ -1,0 +1,3 @@
+[submodule "vendor/GRAVLib"]
+	path = vendor/GRAVLib
+	url = https://github.com/Ajblast/GRAVLib
