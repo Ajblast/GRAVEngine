@@ -38,3 +38,4 @@ add_subdirectory(vendor/GRAVLib)
 
 #Include Runtime Environment
 add_subdirectory(GRAVRuntime)
+add_subdirectory(GRAVEditor)
