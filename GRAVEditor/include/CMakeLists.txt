@@ -1,4 +1,1 @@
-target_sources(${TargetName} 
-	PUBLIC
-		test.h
-)
+add_subdirectory(GRAVEditor)

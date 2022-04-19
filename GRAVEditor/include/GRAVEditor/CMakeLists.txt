@@ -1,4 +1,4 @@
 target_sources(${TargetName} 
-	PRIVATE
-		Application.cpp
+	PUBLIC
+		test.h
 )

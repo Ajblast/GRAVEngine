@@ -1,6 +1,1 @@
-target_sources(${TargetName} 
-	PUBLIC
-		GRAVRuntimeCore.h
-		LibExportImport.h
-		test.h
-)
+add_subdirectory(GRAVRuntime)
