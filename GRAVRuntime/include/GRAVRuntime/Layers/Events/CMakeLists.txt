@@ -1,0 +1,10 @@
+target_sources(${TargetName} 
+	PUBLIC
+		ApplicationEvents.h
+		Event.h
+		EventCategory.h
+		EventDispatcher.h
+		EventType.h
+		KeyEvents.h
+		MouseEvents.h
+)

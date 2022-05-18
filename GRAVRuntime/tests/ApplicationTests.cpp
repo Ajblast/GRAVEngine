@@ -8,6 +8,8 @@
 // Can Push Overlay
 // Can Close Application
 
+// Can Create Windows Window
+
 TEST(GRAVRuntime, PassingTest)
 {
 	SUCCEED() << "Intentionally passed test";

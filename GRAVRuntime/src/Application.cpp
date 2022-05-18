@@ -16,7 +16,7 @@ GRAVLib_SINGLETON_SET_INSTANCE(GRAVRuntime::application);
 
 GRAVRuntime::application::application()
 {
-
+	GRAV_ASSERT_NE(s_Instance, nullptr);
 }
 GRAVRuntime::application::application(const std::string& name)
 {
@@ -34,6 +34,8 @@ GRAVRuntime::application::application(const std::string& name)
 
 	m_Instrumentor = GRAVLib::createScope<GRAVLib::Debug::instrumentor>();
 
+	m_ShaderManager = GRAVLib::createScope<GRAVRuntime::Rendering::Shaders::shaderManager>();
+	//m_TextureManager = GRAVLib::createScope<GRAVRuntime::Rendering::Textures::textureManager>();
 }
 GRAVRuntime::application::~application()
 {
@@ -41,6 +43,9 @@ GRAVRuntime::application::~application()
 
 	m_Instrumentor.reset();
 	m_LogManager.reset();
+
+	m_ShaderManager.reset();
+	//m_TextureManager.reset();
 
 	// TODO: Shutdown the renderer
 	//Rendering::renderer::shutdown();

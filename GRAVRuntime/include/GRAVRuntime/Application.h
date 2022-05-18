@@ -7,6 +7,10 @@
 #include "GRAVLib/Debug/Instrumentation/Instrumentor.h"
 #include "GRAVLib/Debug/Logging/Loggers/LogManager.h"
 
+// Rendering
+#include "GRAVRuntime/Rendering/Shaders/ShaderManager.h"
+//#include "GRAVRuntime/Rendering/Textures/TextureManager.h"
+
 #include <string>
 #include <atomic>
 #include <mutex>
@@ -58,6 +62,9 @@ namespace GRAVRuntime
 		GRAVLib::scope<GRAVLib::Debug::Logging::logManager> m_LogManager;
 		GRAVLib::scope<GRAVLib::Debug::instrumentor> m_Instrumentor;
 		GRAVLib::scope<GRAVLib::Concurrency::Jobs::jobManager> m_JobManager;
+
+		GRAVLib::scope<GRAVRuntime::Rendering::Shaders::shaderManager> m_ShaderManager;
+		//GRAVLib::scope<GRAVRuntime::Rendering::Textures::textureManager> m_TextureManager;
 
 
 		//GRAVLib::scope<Rendering::window> m_Window;				// The window associated with the application

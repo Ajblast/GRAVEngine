@@ -25,6 +25,21 @@
           "name": "BUILD_GMOCK",
           "value": "False",
           "type": "BOOL"
+        },
+        {
+          "name": "GLFW_BUILD_DOCS",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "GLFW_INSTALL",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "GLFW_LIBRARY_TYPE",
+          "value": "SHARED",
+          "type": "STRING"
         }
       ]
     }

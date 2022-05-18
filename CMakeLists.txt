@@ -33,9 +33,17 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
 
+
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+
 #Add vendor items
+message("\nBuild Vendor Libraries")
 add_subdirectory(vendor/GRAVLib)
+message("\nBuild GLFW")
+add_subdirectory(vendor/GLFW)
+message("\nBuild GLM")
+add_subdirectory(vendor/glm)
 
 #Include Runtime Environment
 add_subdirectory(GRAVRuntime)
-add_subdirectory(GRAVEditor)
+#add_subdirectory(GRAVEditor)
